@@ -6,19 +6,61 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <title>DPRA - Klipping</title>
  </head>
- <header>
-    <div class="web-nav d-flex align-items-center">
-        <div class="container">
-            <div class="row">
-                    <img src="assets/img/pancacita.png" alt="Logo Pancacita" style="width: 70px;">
-                    <div style="position: absolute; padding-left: 5rem;">
-                        <h4 class="text-white">DEWAN PERWAKILAN RAKYAT ACEH</h4>
-                        <p class="quotes text-white">Adat Bak Po Teumeuruhom Hukom Bak Syiah Kuala</p>    
-                    </div>
+<header>
+    <div>
+        <div class="web-nav d-flex align-items-center">
+            <div class="container">
+                <div class="row">
+                        <img src="assets/img/pancacita.png" alt="Logo Pancacita" style="width: 70px;">
+                        <div style="position: absolute; padding-left: 5rem;">
+                            <h4 class="text-white">DEWAN PERWAKILAN RAKYAT ACEH</h4>
+                            <p class="quotes text-white">Adat Bak Po Teumeuruhom Hukom Bak Syiah Kuala</p>    
+                        </div>
+                </div>
             </div>
         </div>
     </div>
- </header>
+</header>
+
+    <div class="container mt-5">
+        <div>
+            <h1>Klipping</h1>
+
+            <form action="/action_page.php">
+                <label class="mt-3 form-label" for="tanggal">Tanggal Media</label>
+                <input type="date" class="form-control" id="tanggal" name="tanggal">
+
+                <label class="mt-3" for="Media">Media</label>
+                <select class="form-select" aria-label="Default select example">
+                    <option selected>Pilih Media</option>
+                    <option value="serambi">Harian Serambi Indonesia</option>
+                    <option value="2rakyatAceh">Harian Rakyat Aceh</option>
+                    <option value="waspada">Harian Waspada</option>
+                    <option value="kompas">Harian Kompas</option>
+                    <option value="republika">Harian Republika</option>
+                    <option value="tempo">Majalah Tempo</option>
+                    <option value="modus">Tabloid Modus</option>
+                </select>
+
+                <label for="inputHalaman" class="form-label mt-3">Halaman Berita</label>
+                <input type="number" class="form-control" id="inputHalaman" placeholder="0">
+
+                <label for="inputKolom" class="form-label mt-3">Kolom Berita</label>
+                <input type="number" class="form-control" id="inputHalaman" placeholder="0">
+
+                <label for="inputGambar" class="form-label mt-3">Lampiran Berita</label>
+                <div class="input-group">
+                    <input type="file" class="form-control" id="inputGroupFile02">
+                    <label class="input-group-text" for="inputGroupFile02">Upload</label>
+                </div>
+
+                <button class="btn btn-primary mt-3" type="submit">Simpan</button>
+            </form>
+        </div>
+    </div>
+    
+
+
  <body>
     
  </body>
